@@ -26,11 +26,15 @@ import {
   printmystride,
 } from "../assets";
 const bio = {
-  iAm:" I'm ",
+  iAm: " I'm ",
   name: "Yongqi",
-  roles: ["Full Stack Developer", "UI/UX Designer"],
-  summary:
-    "I build full-stack web applications and design user interfaces.",
+  roles: [
+    "Frontend Developer",
+    "Backend Developer",
+    "UI/UX Designer",
+    "Social Media Manager",
+  ],
+  summary: "I build full-stack web applications and design user interfaces.",
   description: [
     "I am a passionate full-stack developer dedicated to creating captivating web experiences. With expertise in JavaScript, TypeScript, and frameworks like React, Vue, and Nuxt, I craft engaging and user-friendly interfaces. When it comes to 3D, I bring magic to life using Three.js. On the backend, I rely on powerful technologies such as Node.js, Express.js, SQL, and MongoDB.",
 
@@ -44,12 +48,16 @@ const bio = {
 
 const navLinks = [
   {
-    id: "about",
-    title: "About",
-  },
-  {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",

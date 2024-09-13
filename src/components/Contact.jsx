@@ -64,61 +64,63 @@ const Contact = () => {
   };
 
   return (
-    <div className={`xl:mt-12 flex xl:flex-row gap-10 overflow-hidden`}>
-      <div className="flex flex-col w-full p-8 border-tertiary/20 bg-tertiary/30">
-        <div className="flex justify-between">
-          <div className="flex flex-col w-full">
-            <p className={styles.sectionSubText}>Get in touch</p>
-            <h3 className={styles.sectionHeadText}>Contact.</h3>
+    <>
+      <div className={`xl:mt-12 flex xl:flex-row gap-10 overflow-hidden`}>
+        <div className="flex flex-col w-full p-8 border-tertiary/20 bg-tertiary/30">
+          <div className="flex justify-between">
+            <div className="flex flex-col w-full">
+              <p className={styles.sectionSubText}>Get in touch</p>
+              <h3 className={styles.sectionHeadText}>Contact.</h3>
+            </div>
+            <EarthCanvas />
           </div>
-          <EarthCanvas />
-        </div>
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-8 mt-12"
-        >
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
-            />
-          </label>
-
-          <button
-            type="submit"
-            className="w-1/2 px-8 py-3 m-auto font-bold text-white shadow-md outline-none bg-tertiary border-violet-500 violet-gradient rounded-xl shadow-primary hover:bg-blue-400"
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-8 mt-12"
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+            <label className="flex flex-col">
+              <span className="mb-4 font-medium text-white">Name</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="mb-4 font-medium text-white">Email</span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="mb-4 font-medium text-white">Message</span>
+              <textarea
+                rows={7}
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
+              />
+            </label>
+
+            <button
+              type="submit"
+              className="w-full px-8 py-3 m-auto font-bold text-white shadow-md outline-none bg-tertiary border-violet-500 violet-gradient rounded-xl shadow-primary hover:bg-blue-400"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </form>
+        </div>
       </div>
       <StarsCanvas />
-    </div>
+    </>
   );
 };
 

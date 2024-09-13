@@ -6,7 +6,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import {bio} from "@/constants";
+import { bio } from "@/constants";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
@@ -37,28 +37,12 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-
-      { bio.description.map((des)=>{
-        return <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        {des}
-      </motion.p>})}
- 
-
-      <div className="flex flex-wrap gap-10 mt-20">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-    </>
+    <div className="flex flex-wrap gap-10">
+      {services.map((service, index) => (
+        <ServiceCard key={service.title} index={index} {...service} />
+      ))}
+    </div>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;
