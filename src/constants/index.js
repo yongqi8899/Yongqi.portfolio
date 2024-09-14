@@ -199,8 +199,8 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/yongqi8899/resume",
-    deploy_link: "https://fe-printmystride.onrender.com/",
+    source_code_link: "https://github.com/yongqi8899/Yongqi.portfolio",
+    deploy_link: "https://zhang-yongqi.onrender.com",
   },
   {
     name: "printmystride",
