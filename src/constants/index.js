@@ -24,6 +24,7 @@ import {
   music,
   map_3d,
   printmystride,
+  portfolio,
 } from "../assets";
 const bio = {
   iAm: " I'm ",
@@ -179,6 +180,28 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "portfolio",
+    description:
+    "This is my portfolio website, built using React and Three.js. It showcases my skills and expertise in web development.",
+       tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/yongqi8899/resume",
+    deploy_link: "https://fe-printmystride.onrender.com/",
+  },
   {
     name: "printmystride",
     description:

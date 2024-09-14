@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -28,13 +27,13 @@ import it from "./it.gif";
 import music from "./music.gif";
 import map_3d from "./map_3d.gif";
 import printmystride from "./printmystride.gif";
+import portfolio from "./portfolio.gif"
 
 import immobilien from "./company/immobilien.png";
 import good_feeling from "./company/good_feeling.png";
 import yz from "./company/yz.png";
 
 export {
-  logo,
   backend,
   creator,
   mobile,
@@ -63,6 +62,7 @@ export {
   immobilien,
   printmystride,
   good_feeling,
+  portfolio,
   yz,
   internet,
 };
