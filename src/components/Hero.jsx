@@ -35,6 +35,7 @@ const Hero = () => {
             <p
               variants={fadeIn("", "", 0.1, 1)}
               className="mt-4 text-secondary max-w-3xl leading-[1.5rem]"
+              key={des}
             >
               {des}
             </p>

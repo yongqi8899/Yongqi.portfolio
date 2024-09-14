@@ -1,4 +1,4 @@
-import { ContactShadows, OrbitControls, useGLTF } from "@react-three/drei";
+import { ContactShadows, OrbitControls, useGLTF, Edges } from "@react-three/drei";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Me from "./canvas/Me.jsx";
@@ -36,7 +36,8 @@ const ComMe = () => {
             <Me rotation={[0, 0, -Math.PI / 2]} scale={1.2} />
             <mesh scale={[0.8, 0.5, 0.8]} position-y={0.25}>
               <boxGeometry />
-              <meshStandardMaterial color="#404144" />
+              <meshStandardMaterial color="#915EFF" wireframe />
+              <Edges color="#915EFF" lineWidth={2} />
             </mesh>
           </group>
         </Suspense>
