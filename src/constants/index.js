@@ -49,16 +49,16 @@ const bio = {
 
 const navLinks = [
   {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "skills",
     title: "Skills",
   },
   {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "work",
+    title: "Work",
   },
   {
     id: "contact",

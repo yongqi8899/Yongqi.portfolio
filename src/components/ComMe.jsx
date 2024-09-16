@@ -11,8 +11,8 @@ const ComMe = () => {
     <>
       <Canvas
         camera={{
-          fov: 25,
-          position: [3, 10, 3],
+          fov: 30,
+          position: [3, 10, 2],
         }}
       >
         <Suspense fallback={<CanvasLoader />}>

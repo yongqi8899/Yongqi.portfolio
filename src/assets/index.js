@@ -6,6 +6,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import internet from "./internet.svg";
+import rotation from "./rotation.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -65,4 +66,5 @@ export {
   portfolio,
   yz,
   internet,
+  rotation,
 };

@@ -6,6 +6,7 @@ import ComMe from "./ComMe";
 import { bio } from "@/constants";
 import Typewriter from "typewriter-effect";
 import { fadeIn } from "../utils/motion";
+import { rotation } from "@/assets";
 
 const Hero = () => {
   return (
@@ -15,8 +16,8 @@ const Hero = () => {
       <div
         className={`flex flex-col items-center md:items-start md:justify-center md:h-screen h-1/2 ${styles.paddingX} w-full m-auto mt-[5rem] md:mt-0`}
       >
-        <h1 className={`${styles.heroHeadText} text-white`}>
-          Hi, {bio.iAm} <span className="text-[#915EFF]">Yongqi</span>
+        <h1 className={`${styles.heroHeadText} text-white z-5`}>
+         <span>Hi, {bio.iAm} </span> <span className="text-[#915EFF]">Yongqi</span>
         </h1>
         <div className="flex text-3xl">
           {bio.iAm}&nbsp;
@@ -51,8 +52,16 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex w-full md:h-screen  h-1/2 min-h-[38rem] min-w-[40rem] md:min-h-[60rem]">
-        <ComMe />
+      <div className="relative flex flex-col md:h-screen h-1/2">
+        <div className="flex w-full md:h-screen  h-1/2 min-h-[38rem] min-w-[40rem] md:min-h-[60rem] z-20">
+          <ComMe />
+        </div>
+        <div className="absolute bottom-10 left-10 z-1 ">
+          <img
+            src={rotation}
+            alt="rotation"
+          ></img>
+        </div>
       </div>
     </section>
   );
