@@ -56,7 +56,7 @@ const Hero = () => {
         <div className="flex w-full md:h-screen  h-1/2 min-h-[38rem] min-w-[40rem] md:min-h-[60rem] z-20">
           <ComMe />
         </div>
-        <div className="absolute bottom-10 left-10 z-1 ">
+        <div className="absolute top-20 left-10 z-1 ">
           <img
             src={rotation}
             alt="rotation"
