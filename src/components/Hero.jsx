@@ -11,7 +11,7 @@ import { rotation } from "@/assets";
 const Hero = () => {
   return (
     <section
-      className={`flex flex-col items-center  md:flex-row w-full h-screen  m-auto md:justify-evenly md:items-center `}
+      className={`flex flex-col items-center  md:flex-row w-full min-h-screen  m-auto md:justify-evenly md:items-center `}
     >
       <div
         className={`flex flex-col items-center md:items-start md:justify-center md:h-screen h-1/2 ${styles.paddingX} w-full m-auto mt-[5rem] md:mt-0`}
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative flex flex-col md:h-screen h-1/2">
-        <div className="flex w-full md:h-screen  h-1/2 min-h-[38rem] min-w-[40rem] md:min-h-[60rem] z-20">
+        <div className="flex w-full md:h-screen min-h-[38rem] min-w-[40rem] md:min-h-[60rem] z-20">
           <ComMe />
         </div>
         <div className="absolute top-20 left-10 z-1 ">
