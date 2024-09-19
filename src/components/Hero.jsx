@@ -17,7 +17,8 @@ const Hero = () => {
         className={`flex flex-col items-center md:items-start justify-center h-auto ${styles.paddingX} w-full m-auto pt-[5rem] md:mt-0`}
       >
         <h1 className={`${styles.heroHeadText} text-white z-5`}>
-         <span>Hi, {bio.iAm} </span> <span className="text-[#915EFF]">Yongqi</span>
+          <span>Hi, {bio.iAm} </span>{" "}
+          <span className="text-[#915EFF]">Yongqi</span>
         </h1>
         <div className="flex text-3xl">
           {bio.iAm}&nbsp;
@@ -52,15 +53,12 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex w-full min-w-[400px] min-h-[600px] z-20 relative flex-col h-screen">
-        
+      <div className="relative z-20 flex flex-col w-full h-screen">
+        <div className="min-w-[400px] min-h-[400px] h-full">
           <ComMe />
-   
+        </div>
         <div className="absolute top-20 left-10 z-1 h-2rem">
-          <img
-            src={rotation}
-            alt="rotation"
-          ></img>
+          <img src={rotation} alt="rotation"></img>
         </div>
       </div>
     </section>
