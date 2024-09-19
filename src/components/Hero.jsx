@@ -14,7 +14,7 @@ const Hero = () => {
       className={`flex flex-col items-center  md:flex-row w-full min-h-screen  m-auto md:justify-evenly md:items-center `}
     >
       <div
-        className={`flex flex-col items-center md:items-start md:justify-center md:h-screen h-1/2 ${styles.paddingX} w-full m-auto mt-[5rem] md:mt-0`}
+        className={`flex flex-col items-center md:items-start md:justify-center h-screen ${styles.paddingX} w-full m-auto mt-[5rem] md:mt-0`}
       >
         <h1 className={`${styles.heroHeadText} text-white z-5`}>
          <span>Hi, {bio.iAm} </span> <span className="text-[#915EFF]">Yongqi</span>
