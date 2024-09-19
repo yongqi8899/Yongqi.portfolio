@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import Loader from "./components/Loader";
+import Loading from "./components/Loading.jsx";
 
 const Contact = lazy(() => import("./components/Contact"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <div className="bg-center bg-no-repeat bg-cover bg-hero-pattern">
             <Navbar />
             <Hero />
