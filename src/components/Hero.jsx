@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative z-20 flex flex-col w-full h-screen">
-        <div className="min-w-[400px] min-h-[400px] h-full">
+        <div className="min-w-[400px] min-h-[400px] h-full touch-auto">
           <ComMe />
         </div>
         <div className="absolute top-20 left-10 z-1 h-2rem">
