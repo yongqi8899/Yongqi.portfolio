@@ -14,7 +14,7 @@ const Hero = () => {
       className={`flex flex-col items-center  md:flex-row w-full min-h-screen  m-auto md:justify-evenly md:items-center `}
     >
       <div
-        className={`flex flex-col items-center md:items-start md:justify-center h-screen ${styles.paddingX} w-full m-auto mt-[5rem] md:mt-0`}
+        className={`flex flex-col items-center md:items-start justify-center h-auto ${styles.paddingX} w-full m-auto pt-[5rem] md:mt-0`}
       >
         <h1 className={`${styles.heroHeadText} text-white z-5`}>
          <span>Hi, {bio.iAm} </span> <span className="text-[#915EFF]">Yongqi</span>
@@ -52,11 +52,11 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="relative flex flex-col md:h-screen h-1/2">
-        <div className="flex w-full md:h-screen min-h-[38rem] min-w-[40rem] md:min-h-[60rem] z-20">
+      <div className="relative flex flex-col h-screen">
+        <div className="flex w-full h-screen min-w-[40rem] min-h-[60rem] z-20">
           <ComMe />
         </div>
-        <div className="absolute top-20 left-10 z-1 ">
+        <div className="absolute top-20 left-10 z-1 h-2rem">
           <img
             src={rotation}
             alt="rotation"
