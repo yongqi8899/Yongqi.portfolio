@@ -30,10 +30,8 @@ const bio = {
   iAm: " I'm ",
   name: "Yongqi",
   roles: [
-    "Frontend Developer",
-    "Backend Developer",
+    "Full Stack Developer",
     "UI/UX Designer",
-    "Social Media Manager",
   ],
   summary: "I build full-stack web applications and design user interfaces.",
   description: [
@@ -55,10 +53,6 @@ const navLinks = [
   {
     id: "projects",
     title: "Projects",
-  },
-  {
-    id: "work",
-    title: "Work",
   },
   {
     id: "contact",
