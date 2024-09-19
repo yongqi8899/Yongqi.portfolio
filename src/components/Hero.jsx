@@ -52,10 +52,10 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="relative flex flex-col h-screen">
-        <div className="flex w-full h-screen min-w-[40rem] min-h-[60rem] z-20">
+      <div className="flex w-full min-w-[400px] min-h-[600px] z-20 relative flex-col h-screen">
+        
           <ComMe />
-        </div>
+   
         <div className="absolute top-20 left-10 z-1 h-2rem">
           <img
             src={rotation}
