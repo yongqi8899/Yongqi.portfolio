@@ -1,7 +1,8 @@
 import { CirclesWithBar } from "react-loader-spinner";
 export default function Loading() {
   return (
-    <CirclesWithBar
+    <div className="flex flex-col items-center justify-center gap-10 m-auto mt-20">
+      <CirclesWithBar
         height="400"
         width="400"
         color="#915EFF"
@@ -9,8 +10,10 @@ export default function Loading() {
         innerCircleColor="#915EFF"
         barColor="#915EFF"
         ariaLabel="circles-with-bar-loading"
-        wrapperClass="flex items-center justify-center mt-20"
+       
         visible={true}
       />
+      <p className="text-3xl">Yongqi's Website</p>
+    </div>
   );
 }
