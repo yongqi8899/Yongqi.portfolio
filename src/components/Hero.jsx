@@ -45,7 +45,7 @@ const Hero = () => {
         })}
         <div className="mt-10 ">
           <Link
-            to="https://drive.google.com/file/d/1DRkqJ35iyo1SqRqOl1Ci6GgiSG4_fZod/view?usp=drive_link"
+            to="https://drive.google.com/file/d/1GiFE2E8CqymL9VI-S9CReX6XQD7e8ou3/view?usp=drive_link"
             target="_blank"
             className="px-6 py-2 text-lg font-bold border border-violet-500 violet-gradient rounded-xl hover:bg-blue-400"
           >
