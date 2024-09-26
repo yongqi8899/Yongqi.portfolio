@@ -13,13 +13,13 @@ const App = () => {
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <Suspense fallback={<Loading />}>
-          <div className="bg-center bg-no-repeat bg-cover bg-hero-pattern">
+          <div className="bg-center bg-no-repeat bg-cover bg-hero-pattern bg-primary">
             <Navbar />
             <Hero />
           </div>
           <Tech />
           <Works />
-          <div className="relative z-0">
+          <div className="relative z-0 ">
             <Contact />
           </div>
         </Suspense>

@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <div className={`xl:mt-12 flex xl:flex-row gap-10 overflow-hidden`}>
-        <div className="flex flex-col w-full p-8 border-tertiary/20 bg-tertiary/30">
+        <div className="flex flex-col w-full p-8">
           <div className="flex flex-col justify-between md:flex-row">
             <div>
               <div className="flex flex-col w-full">

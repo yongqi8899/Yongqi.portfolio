@@ -1,7 +1,7 @@
 import { CirclesWithBar } from "react-loader-spinner";
 export default function Loading() {
   return (
-    <div className="flex flex-col items-center justify-center gap-10 m-auto mt-20">
+    <div className="absolute flex flex-col items-center justify-center w-screen h-screen gap-10 m-auto bg-primary">
       <CirclesWithBar
         height="400"
         width="400"
